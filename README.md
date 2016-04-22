@@ -1,2 +1,2 @@
 # pygamegame
-A game in development crated in pythin using pygame
+A game in development crated in python using pygame
