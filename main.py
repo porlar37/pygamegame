@@ -1,4 +1,4 @@
-import pygame, time, random, map.py, items.py, sys 
+import pygame, time, random, map.py, items.py, sys, thread
 from pygame.locals import *
 
 # set up pygame
@@ -25,6 +25,9 @@ waking-left = False
 waking-right = False
 atacking = False
 
+#defines funcktione for rendering
+def render():
+	
 #run the game loop
 while runing == True:
 	#check for pygame events
@@ -37,6 +40,7 @@ while runing == True:
 		if event.type == KEYDOWN:
 		#check for the KEYUP event
 		if event.type == KEYUP:
+	thread.start_new_thread(render())
 #main loop ended quiting
 pygame.quit()
 sys.quit()
