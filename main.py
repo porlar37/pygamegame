@@ -16,6 +16,15 @@ pused = False
 exiting = False
 runing = True
 
+#set up esantal veriabels for the player
+player-x = 0
+player-y = 0
+waking-forword = False
+waking-backword = False
+waking-left = False
+waking-right = False
+atacking = False
+
 #run the game loop
 while runing == True:
 	#check for pygame events
